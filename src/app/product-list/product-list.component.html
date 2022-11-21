@@ -1,0 +1,29 @@
+<h2 style="transform:rorate(70deg)" >My Products</h2>
+
+<div *ngFor="let product of products" class="container">
+
+  <div class="card">
+     <div class="image">
+      <img src={{product.image}}/>
+  
+    </div>
+    <div class="details">
+      <h2>{{product.productName}}</h2>
+      <h1>Rs.{{product.price}}/-</h1>
+      <h4>{{product.tags}}</h4>
+      <div class="buttons">
+         <a href="#" >ADD TO CART</a>
+  
+         <a href="#" >BUY</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
